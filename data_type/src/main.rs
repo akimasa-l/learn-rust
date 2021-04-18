@@ -1,11 +1,11 @@
 fn array() {
     let mut a = [1, 4, 6];
-    a[2]=4;
+    a[2] = 4;
     println!("a is {:?}", a);
     println!("a[0] is {}", a[0]);
     let b = a[0] + 10;
     println!("b is {}", b);
-    let index:usize = "10".parse().unwrap();
+    let index: usize = "10".parse().unwrap();
     println!("a[index] is {}", a[index]);
 }
 fn double() {
