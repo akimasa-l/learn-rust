@@ -7,14 +7,14 @@ fn main() {
     //println!("Hello, world!");
 
     let guess: u32 = guess.trim().parse().expect("Please type a number!");
-    println!(
-        "return is {}",
-        {let ans=if guess < 54 {
+    println!("return is {}", {
+        let ans = if guess < 54 {
             println!("guess is lower than 54");
             54
         } else {
             println!("guess is larger or same to 54");
             43
-        };ans}
-    )
+        };
+        ans
+    })
 }
