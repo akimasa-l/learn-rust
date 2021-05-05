@@ -1,3 +1,9 @@
+use proconio::input;
 fn main() {
-    println!("Hello, world!");
+    loop {
+        input! {
+            n:i32
+        };
+        println!("n is {}", n);
+    }
 }
