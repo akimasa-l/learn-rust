@@ -1,5 +1,6 @@
 use proconio::input;
-use std::io::{stdout};
+//use std::io::{stdout};
+use std::io::{stdout, Write};
 fn main() {
     loop {
         input! {
