@@ -1,0 +1,28 @@
+       Fresh lazy_static v1.4.0
+       Fresh proconio v0.4.3
+   Compiling loops v0.1.0 (C:\For-mingzheng\rustforme\learn-rust\loops)
+     Running `rustc --crate-name loops --edition=2018 'src\main.rs' --error-format=json --json=diagnostic-rendered-ansi --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 -C metadata=9141e33025d37511 --out-dir 'C:\For-mingzheng\rustforme\learn-rust\loops\target\debug\deps' -C 'incremental=C:\For-mingzheng\rustforme\learn-rust\loops\target\debug\incremental' -L 'dependency=C:\For-mingzheng\rustforme\learn-rust\loops\target\debug\deps' --extern 'proconio=C:\For-mingzheng\rustforme\learn-rust\loops\target\debug\deps\libproconio-40687f40b00638d3.rlib'`
+error[E0599]: no method named `flush` found for struct `Stdout` in the current scope
+    --> src\main.rs:8:18
+     |
+8    |         stdout().flush().unwrap();
+     |                  ^^^^^ method not found in `Stdout`
+     | 
+    ::: C:\Users\liumi\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\std\src\io\mod.rs:1398:8
+     |
+1398 |     fn flush(&mut self) -> Result<()>;
+     |        ----- the method is available for `Box<Stdout>` here
+     |
+     = help: items from traits can only be used if the trait is in scope
+help: the following trait is implemented but not in scope; perhaps add a `use` for it:
+     |
+1    | use std::io::Write;
+     |
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0599`.
+error: could not compile `loops`
+
+Caused by:
+  process didn't exit successfully: `rustc --crate-name loops --edition=2018 'src\main.rs' --error-format=json --json=diagnostic-rendered-ansi --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 -C metadata=9141e33025d37511 --out-dir 'C:\For-mingzheng\rustforme\learn-rust\loops\target\debug\deps' -C 'incremental=C:\For-mingzheng\rustforme\learn-rust\loops\target\debug\incremental' -L 'dependency=C:\For-mingzheng\rustforme\learn-rust\loops\target\debug\deps' --extern 'proconio=C:\For-mingzheng\rustforme\learn-rust\loops\target\debug\deps\libproconio-40687f40b00638d3.rlib'` (exit code: 1)
