@@ -16,9 +16,9 @@ fn try_clone() {
     let b = a.clone();
     println!("a, b is : {}, {}", a, b)
 }
-fn int(){
-    let a=5;
-    let b=a;
-    let c=a.clone();
+fn int() {
+    let a = 5;
+    let b = a;
+    let c = a.clone();
     println!("a, b, c is : {}, {}, {}", a, b, c);
 }
