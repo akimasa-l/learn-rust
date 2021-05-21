@@ -7,11 +7,18 @@ fn main() {
     println!("new message is: {}", new_message);
     // println!("message is: {}",message);
     // コンパイルエラー
-    try_clone()
+    try_clone();
+    int();
 }
 fn try_clone() {
     let a = String::from("apple");
     println!("a is: {}", a);
     let b = a.clone();
     println!("a, b is : {}, {}", a, b)
+}
+fn int(){
+    let a=5;
+    let b=a;
+    let c=a.clone();
+    println!("a, b, c is : {}, {}, {}", a, b, c);
 }
