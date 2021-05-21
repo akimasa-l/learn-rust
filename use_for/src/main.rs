@@ -5,8 +5,8 @@ fn main() {
     }
     countdown()
 }
-fn countdown(){
-    for i in (0..5).rev(){
+fn countdown() {
+    for i in (0..5).rev() {
         println!("{}!", i);
     }
     println!("liftoff!")
