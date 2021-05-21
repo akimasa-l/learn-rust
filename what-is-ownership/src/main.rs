@@ -9,9 +9,9 @@ fn main() {
     // コンパイルエラー
     try_clone()
 }
-fn try_clone(){
-    let a=String::from("apple");
+fn try_clone() {
+    let a = String::from("apple");
     println!("a is: {}", a);
-    let b=a.clone();
-    println!("a, b is : {}, {}",a,b)
+    let b = a.clone();
+    println!("a, b is : {}, {}", a, b)
 }
