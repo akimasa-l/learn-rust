@@ -16,6 +16,7 @@ fn main() {
     println!("slice is {}", slice);
 
     println!("first word is {}", first_word(&s[..]));
+    println!("the forst word of \"The first take\" is {}",first_word("The first take"));
 }
 fn first_word(s: &str) -> &str {
     let bytes = s.as_bytes();
