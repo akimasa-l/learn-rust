@@ -16,7 +16,11 @@ fn main() {
     println!("slice is {}", slice);
 
     println!("first word is {}", first_word(&s[..]));
-    println!("the forst word of \"The first take\" is {}",first_word("The first take"));
+    println!(
+        "the first word of \"The first take\" is {}",
+        first_word("The first take")
+    );
+    int_slice();
 }
 fn first_word(s: &str) -> &str {
     let bytes = s.as_bytes();
@@ -26,4 +30,8 @@ fn first_word(s: &str) -> &str {
         }
     }
     return &s[..];
+}
+fn int_slice() {
+    let a = &[2, 3, 5, 7][..2];
+    println!("a[1] is {}", a[1]);
 }
