@@ -12,6 +12,7 @@ fn main() {
     println!("name is {}", u.name);
     println!("mail is {}", u.mail);
     println!("age is {}", u.age);
+    color();
 }
 struct User {
     mail: String,
@@ -24,4 +25,9 @@ fn make_user(mail_ad: String, age: i8) -> User {
         age,
         name: String::from("user100"),
     }
+}
+struct Color(i32, i32, i32);
+fn color() {
+    let color = Color(0xAC, 0x10, 0x00);
+    println!("color is {}, {}, {}", color.0, color.1, color.2);
 }
