@@ -15,9 +15,9 @@ fn main() {
     let slice = &s[..];
     println!("slice is {}", slice);
 
-    println!("first word is {}", first_word(&s));
+    println!("first word is {}", first_word(&s[..]));
 }
-fn first_word(s: &String) -> &str {
+fn first_word(s: &str) -> &str {
     let bytes = s.as_bytes();
     for (i, &items) in bytes.iter().enumerate() {
         if items == b' ' {
