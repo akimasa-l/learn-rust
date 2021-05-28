@@ -12,6 +12,15 @@ fn main() {
     println!("name is {}", u.name);
     println!("mail is {}", u.mail);
     println!("age is {}", u.age);
+    let o = User {
+        name: String::from("o"),
+        ..u
+    };
+
+    println!("name is {}", o.name);
+    println!("mail is {}", o.mail);
+    println!("age is {}", o.age);
+
     color();
 }
 struct User {
