@@ -4,8 +4,10 @@ fn main() {
         height: 30,
     };
     println!("r's width is {} and r's height is {}", r.width, r.height);
+    println!("r is {:?}",r);
     println!("area is {}", area(&r));
 }
+#[derive(Debug)]
 struct Rectangle {
     width: u32,
     height: u32,
