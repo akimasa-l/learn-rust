@@ -18,6 +18,8 @@ fn main() {
     } else {
         println!("area1 cannot hold area2");
     };
+    let area3 = Rectangle::square(20);
+    println!("area3's area is {}", area3.area());
 }
 //#[derive(Debug)]
 struct Rectangle {
@@ -30,5 +32,11 @@ impl Rectangle {
     }
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
+    }
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
     }
 }
