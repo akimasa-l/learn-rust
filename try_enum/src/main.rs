@@ -5,7 +5,7 @@ fn main() {
     kind(four);
     kind(six);
 }
-//#[derive(Debug)]
+#[derive(Debug)]
 enum IPAddrKind {
     V4(u8, u8, u8, u8),
     V6(String),
