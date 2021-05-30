@@ -5,7 +5,10 @@ fn main() {
 }
 impl Message {
     fn call(&self) {
-        println!("function was called.")
+        match self {
+            Message::Write(s) => println!("s is {}", s),
+            _ => (),
+        }
     }
 }
 enum Message {
