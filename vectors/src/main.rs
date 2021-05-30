@@ -12,4 +12,35 @@ fn main() {
         *i *= 4;
         println!("{}", i);
     }
+    let cells = vec![
+        SpreadSheetCell::Text(String::from("apple")),
+        SpreadSheetCell::Int(1),
+        SpreadSheetCell::Float(3.5),
+    ];
+    for i in &cells {
+        i.print();
+    }
+}
+enum SpreadSheetCell {
+    Text(String),
+    Int(i32),
+    Float(f64),
+}
+impl SpreadSheetCell {
+    fn print(&self) {
+        match self {
+            SpreadSheetCell::Text(s) => {
+                println!("This is String");
+                println!("{}", s)
+            }
+            SpreadSheetCell::Int(x) => {
+                println!("This is i32");
+                println!("{}", x)
+            }
+            SpreadSheetCell::Float(y) => {
+                println!("This is f64");
+                println!("{}", y)
+            }
+        }
+    }
 }
