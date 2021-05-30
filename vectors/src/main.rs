@@ -8,8 +8,8 @@ fn main() {
     } else {
         println!("second element doesn't exist");
     }
-    for i in & mut l{
-        *i*=4;
+    for i in &mut l {
+        *i *= 4;
         println!("{}", i);
     }
 }
