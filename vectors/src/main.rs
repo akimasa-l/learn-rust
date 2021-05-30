@@ -8,4 +8,7 @@ fn main() {
     } else {
         println!("second element doesn't exist");
     }
+    for i in &l{
+        println!("{}", i);
+    }
 }
